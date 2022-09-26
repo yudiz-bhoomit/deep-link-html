@@ -48,6 +48,7 @@
         const myParam = urlParams.get('deep_link');
         if(!myParam) {
             console.log('not link found')
+            return
         }
         console.log(myParam);
         window.location.href = myParam;
